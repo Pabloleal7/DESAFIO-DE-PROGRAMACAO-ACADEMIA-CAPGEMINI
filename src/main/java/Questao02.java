@@ -22,10 +22,10 @@ public class Questao02 {
             temCaractersEspeciais(senha);
             if (caracteresAusentes.length() == 0){
                 System.out.println("Faltam " + (6 - senha.length()) + " caracteres");
-                return  (6 - senha.length()) + caracteresAusentes.length();
+                return  6 - senha.length() ;
             }{
-                System.out.println("Faltam " + ((6 - senha.length()) + caracteresAusentes.length()) + " caracteres, voce deve adicionar pelo menos 1 de cada um desses caracteres: " + caracteresAusentes);
-                return  caracteresAusentes.length();
+                System.out.println("Faltam " +( 6 - senha.length() ) + " caracteres, voce deve adicionar pelo menos 1 de cada um desses caracteres: " + caracteresAusentes);
+                return  6 - senha.length() ;
             }
 
 

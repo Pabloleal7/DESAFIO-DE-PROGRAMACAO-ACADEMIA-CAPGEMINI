@@ -45,4 +45,12 @@ public class Questao02Tests {
 
     }
 
+    @Test
+    @DisplayName("Desafio 2 - Testar Senha invalida com menos que 6 caracteres e faltando 1 tipo de caractere")
+    public void senhaInvalidaComMenosQue6CaractersEFaltandoTipo(){
+        Questao02 test4 = new Questao02();
+        assertEquals(2,test4.validarSenha("M@in"));
+
+    }
+
 }
